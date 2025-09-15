@@ -12,9 +12,11 @@ export interface ProjectInterface {
   thumnail?: string[];
   tech?: string;
   onClick: () => void;
+  cName: string;
 }
 
 const EachProjectCard = ({
+  cName,
   title,
   subTitle,
   tech,
@@ -22,7 +24,7 @@ const EachProjectCard = ({
   onClick,
 }: ProjectInterface) => {
   return (
-    <div className="update-container" onClick={onClick}>
+    <div className={`update-container ${cName}`} onClick={onClick}>
       <div className="elem1">
         <h3>{title}</h3>
 

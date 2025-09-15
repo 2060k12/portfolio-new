@@ -16,7 +16,6 @@ const TechIconPage = () => {
       duration: 2,
       scrollTrigger: {
         trigger: first.current,
-        markers: true,
         start: "top 70%",
         end: "top 50%",
         scrub: true,
@@ -62,12 +61,12 @@ const TechIconPage = () => {
   return (
     <div className="page2">
       <div className="first" ref={first}>
-        <img src="/HTML5.svg" alt="" />
-        <img src="/CSS3.svg" alt="" />
-        <img src="/JavaScript.svg" alt="" />
-        <img src="/React.svg" alt="" />
+        <img src="icons/HTML5.svg" alt="" />
+        <img src="icons/CSS3.svg" alt="" />
+        <img src="icons/JavaScript.svg" alt="" />
+        <img src="icons/React.svg" alt="" />
         <img
-          src="/Express.svg"
+          src="icons/Express.svg"
           alt=""
           style={{
             color: "white",
@@ -76,35 +75,35 @@ const TechIconPage = () => {
             padding: 2,
           }}
         />
-        <img src="/Vite.js.svg" alt="" />
-        <img src="/Node.js.svg" alt="" />
-        <img src="/Tailwind CSS.svg" alt="" />
+        <img src="icons/Vite.js.svg" alt="" />
+        <img src="icons/Node.js.svg" alt="" />
+        <img src="icons/Tailwind CSS.svg" alt="" />
 
-        <img src="/Webflow.svg" alt="" />
-        <img src="/WordPress.svg" alt="" />
+        <img src="icons/Webflow.svg" alt="" />
+        <img src="icons/WordPress.svg" alt="" />
       </div>
 
       <div className="second" ref={second}>
-        <img src=" /Java.svg" alt="" />
-        <img src=" /Spring.svg" alt="" />
-        <img src=" /Android.svg" alt="" />
-        <img src=" /Git.svg" alt="" />
-        <img src=" /GitHub.svg" alt="" />
-        <img src=" /GitLab.svg" alt="" />
-        <img src=" /PostgresSQL.svg" alt="" />
-        <img src=" /MySQL.svg" alt="" />
-        <img src=" /MongoDB.svg" alt="" />
-        <img src=" /apple.png" alt="" />
+        <img src="icons/Java.svg" alt="" />
+        <img src="icons/Spring.svg" alt="" />
+        <img src="icons/Android.svg" alt="" />
+        <img src="icons/Git.svg" alt="" />
+        <img src="icons/GitHub.svg" alt="" />
+        <img src="icons/GitLab.svg" alt="" />
+        <img src="icons/PostgresSQL.svg" alt="" />
+        <img src="icons/MySQL.svg" alt="" />
+        <img src="icons/MongoDB.svg" alt="" />
+        <img src="icons/apple.png" alt="" />
       </div>
 
       <div className="third" ref={third}>
-        <img src=" /CSharp.svg" alt="" />
-        <img src=" /Digital Ocean.svg" alt="" />
-        <img src=" /GraphQL.svg" alt="" />
-        <img src=" /sqlserver.svg" alt="" />
-        <img src=" /NET core.svg" alt="" />
+        <img src="icons/CSharp.svg" alt="" />
+        <img src="icons/Digital Ocean.svg" alt="" />
+        <img src="icons/GraphQL.svg" alt="" />
+        <img src="icons/sqlserver.svg" alt="" />
+        <img src="icons/NET core.svg" alt="" />
         <img
-          src=" /Next.js.svg"
+          src="icons/Next.js.svg"
           alt=""
           style={{
             color: "white",
@@ -113,23 +112,23 @@ const TechIconPage = () => {
             padding: 2,
           }}
         />
-        <img src=" /Postman.svg" alt="" />
-        <img src=" /SQLite.svg" alt="" />
-        <img src=" /Docker.svg" alt="" />
-        <img src=" /Xcode.svg" alt="" />
+        <img src="icons/Postman.svg" alt="" />
+        <img src="icons/SQLite.svg" alt="" />
+        <img src="icons/Docker.svg" alt="" />
+        <img src="icons/Xcode.svg" alt="" />
       </div>
 
       <div className="forth" ref={forth}>
-        <img src=" /Adobe Photoshop.svg" alt="" />
-        <img src=" /Redis.svg" alt="" />
-        <img src=" /Adobe Illustrator.svg" alt="" />
-        <img src=" /AWS.svg" alt="" />
-        <img src=" /Dart.svg" alt="" />
-        <img src=" /Redux.svg" alt="" />
-        <img src=" /Flutter.svg" alt="" />
-        <img src=" /Kotlin.svg" alt="" />
-        <img src=" /Swift.svg" alt="" />
-        <img src=" /Firebase.svg" alt="" />
+        <img src="icons/Adobe Photoshop.svg" alt="" />
+        <img src="icons/Redis.svg" alt="" />
+        <img src="icons/Adobe Illustrator.svg" alt="" />
+        <img src="icons/AWS.svg" alt="" />
+        <img src="icons/Dart.svg" alt="" />
+        <img src="icons/Redux.svg" alt="" />
+        <img src="icons/Flutter.svg" alt="" />
+        <img src="icons/Kotlin.svg" alt="" />
+        <img src="icons/Swift.svg" alt="" />
+        <img src="icons/Firebase.svg" alt="" />
       </div>
     </div>
   );
