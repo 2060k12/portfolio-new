@@ -1,5 +1,3 @@
-import React from "react";
-
 const TechIconPage = () => {
   return (
     <div className="page2">

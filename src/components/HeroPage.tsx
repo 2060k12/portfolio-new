@@ -1,5 +1,3 @@
-import React from "react";
-
 const HeroPage = () => {
   return (
     <div className="page1">
