@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+}
+
+.page1 {
+  width: 100%;
+  height: 100vh;
+}
+
+.page2 {
+  width: 100%;
+  height: 100vh;
+  /* background-color: antiquewhite; */
+}
+
+.page3 {
+  width: 100%;
+  height: 100vh;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page3 h1 {
+  font-size: 10vw;
+}
+
+.page4 {
+  width: 100%;
+  height: 100vh;
+  /* background-color: blueviolet; */
+}
+
+.page2 .third,
+.page2 .forth,
+.page2 .second,
+.page2 .first {
+  display: flex;
+  gap: 2vw;
+  margin: 4vh;
+}
+
+.page2 img {
+  width: 6vw;
+}
+
+.mobile-ss-group img {
+  width: 9vw;
+}
+
+.desktok-ss img {
+  width: 27vw;
+}
+
+.page4 .project-grid {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1vw;
+}
+
+.project-detail {
+  width: 100%;
+  height: 100vh;
+  padding: 2vw 4vw;
+}
+
+.project-detail h1 {
+  font-size: 9vw;
+}
+
+.project-detail .title {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.title img {
+  width: 5vw;
+  height: 5vw;
+}
+
+.project-detail .sub-title {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.project-detail h3 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.project-detail p {
+  font-size: 1em;
+  font-weight: 300;
+}
+.project-detail h4 {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.project-detail h5 {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.overview-video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  gap: 5vw;
+  margin-top: 2vw;
+}
+.project-detail .ss-section {
+  margin-top: 2vw;
+}
+.project-detail .ss-section h2 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.project-detail .screenshots-imgs {
+  display: flex;
+  gap: 1vw;
+}
+
+.project-detail .screenshots-imgs img {
+  width: 15vw;
+  border-radius: 10px;
+}
