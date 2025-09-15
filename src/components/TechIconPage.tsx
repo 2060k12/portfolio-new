@@ -11,51 +11,51 @@ const TechIconPage = () => {
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
     gsap.from(first.current, {
-      translateX: "-40vw",
+      x: "-40vw",
       opacity: 0,
       duration: 2,
 
       scrollTrigger: {
         trigger: first.current,
         start: "top 70%",
-        end: "top 30%",
+        end: "top 50%",
         scrub: true,
       },
     });
     gsap.from(second.current, {
-      translateX: "40vw",
+      x: "40vw",
+      opacity: 0,
+      duration: 2,
+      scrollTrigger: {
+        trigger: first.current,
+        start: "top 70%",
+        end: "top 50%",
+        scrub: true,
+      },
+    });
+    gsap.from(third.current, {
+      x: "-40vw",
       opacity: 0,
       duration: 2,
 
       scrollTrigger: {
         trigger: first.current,
         start: "top 70%",
-        end: "top 30%",
-        scrub: true,
-      },
-    });
-    gsap.from(third.current, {
-      translateX: "-40vw",
-      opacity: 0,
-      duration: 2,
-
-      scrollTrigger: {
-        trigger: first.current,
-        start: "top 90%",
-        end: "top 0%",
+        end: "top 40%",
         scrub: true,
       },
     });
     gsap.from(forth.current, {
-      translateX: "40vw",
+      x: "40vw",
       opacity: 0,
       duration: 2,
 
       scrollTrigger: {
         trigger: first.current,
-        start: "top 90%",
-        end: "top 0%",
+        start: "top 70%",
+        end: "top 40%",
         scrub: true,
+        markers: true,
       },
     });
   });
