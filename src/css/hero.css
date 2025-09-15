@@ -6,17 +6,6 @@
   position: absolute;
 }
 
-/* .crsr {
-  border: 1px solid white;
-  mix-blend-mode: difference;
-  height: 3vw;
-  width: 3vw;
-  border-radius: 50%;
-  position: fixed;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-} */
-
 .loader {
   height: 100%;
   width: 100%;
@@ -107,11 +96,11 @@
 
 /* hero */
 .page1 h1 {
-  font-size: 10vw;
+  font-size: 8vw;
 }
 
 .page1 h2 {
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
 .page1 {
@@ -128,5 +117,20 @@
 }
 
 .page1 img {
-  padding-top: 4vw;
+  padding-top: 15vw;
+  width: 30px;
+  animation: blink 1.5s ease-in infinite;
+  transition: all 1s ease-in-out;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

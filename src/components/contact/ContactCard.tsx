@@ -7,7 +7,6 @@ const ContactCard = ({ title, detail, onClick }: Props) => {
   return (
     <div className="contact-card">
       <div className="card-left">
-        <img src="/android.svg" alt="" />
         <div className="detail">
           <h3>{title}</h3>
           <h4>{detail}</h4>

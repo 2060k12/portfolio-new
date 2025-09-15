@@ -7,7 +7,7 @@ import About from "./About";
 
 const HomePage = () => {
   return (
-    <div id="main" data-scroll-container style={{ overflow: "hidden" }}>
+    <div id="main">
       <HeroPage />
       <TechIconPage />
       <About />

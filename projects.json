@@ -68,7 +68,7 @@
   {
     "id": "project-4",
     "title": "Music Review App",
-    "tech": "Java, Android, MVVM, Room Database, LiveData, XML Layouts, Fragments, ViewBinding",
+    "tech": "Java, Android, MVVM, Room Database, LiveData, XML Layouts",
     "subTitle": "Java, Android",
     "github": "https://github.com/2060k12/music-review-app",
     "overview": "A music review application built using Java and Android. It follows the MVVM architecture and utilizes LiveData, Room Database, XML layouts, Fragments, ViewBinding, RecyclerView, and Picasso for image loading.",

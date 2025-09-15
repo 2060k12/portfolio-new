@@ -1,6 +1,23 @@
 import ContactCard from "./ContactCard";
 import "./../..//css/contact_form.css";
+import { useEffect, useState } from "react";
 const ContactForm = () => {
+  const [time, setTime] = useState("");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const sydneyTime = new Date().toLocaleTimeString("en-AU", {
+        timeZone: "Australia/Sydney",
+        hour12: true,
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+      });
+      setTime(sydneyTime);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div className="contact-form">
       <div className="form">
@@ -8,8 +25,8 @@ const ContactForm = () => {
           <h1>Get in touch</h1>
           <div className="details">
             <ContactCard
-              title="hello@itspranish.dev"
-              detail="Email"
+              detail="hello@itspranish.dev"
+              title="Email"
               onClick={() => {}}
             />
             <ContactCard
@@ -19,7 +36,7 @@ const ContactForm = () => {
             />
             <ContactCard
               title="Current Time"
-              detail="5:00 PM"
+              detail={time}
               onClick={() => {}}
             />
           </div>

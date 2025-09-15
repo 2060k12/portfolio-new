@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
+import "./../css/tech.css";
 
 const TechIconPage = () => {
   const first = useRef(null);
