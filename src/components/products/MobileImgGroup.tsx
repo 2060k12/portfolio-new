@@ -1,15 +1,13 @@
 interface Prop {
   imgs: string[];
-  title: string;
 }
-const MobileImgGroup = ({ imgs, title }: Prop) => {
+const MobileImgGroup = ({ imgs }: Prop) => {
   return (
     <div className="mobile-group">
       <div className="mobile-ss-group">
-        {imgs.map((each) => (
-          <img src={each} alt="" />
+        {imgs.map((each, index) => (
+          <img src={each} alt="" key={index} />
         ))}
-        <h4>{title}</h4>
       </div>
     </div>
   );

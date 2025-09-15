@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { useParams } from "react-router-dom";
 import gsap from "gsap";
@@ -10,6 +10,11 @@ const ProductDetails = () => {
   const ss = useRef(null);
 
   const { id } = useParams();
+
+  useEffect(() => {
+    console.log(id);
+  });
+
   const project = data.find((item) => item.id === id);
 
   useGSAP(() => {
@@ -79,22 +84,9 @@ const ProductDetails = () => {
         <h2>Screenshots</h2>
 
         <div className="screenshots-imgs">
-          <img
-            src="https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f39562232881730a5a1d7_photo1-p-800.jpg"
-            alt=""
-          />
-          <img
-            src="https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f3a76996eb53c8a43ae7d_photo2-p-800.jpg"
-            alt=""
-          />
-          <img
-            src="https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f3a7653e5e2203087efa6_photo4-p-800.jpg"
-            alt=""
-          />
-          <img
-            src="https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f3a76acc37f6a5b526957_photo5-p-800.jpg"
-            alt=""
-          />
+          {project.screenshot.map((item) => (
+            <img src={item} alt="" />
+          ))}
         </div>
       </div>
     </div>

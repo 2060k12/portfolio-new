@@ -28,14 +28,11 @@ const EachProjectCard = ({
 
         {thumnail?.length === 1 ? (
           <div className="image">
-            <DesktopImg img={thumnail[0]} title="Social Media" />
+            <DesktopImg img={thumnail[0]} />
           </div>
         ) : (
           <div className="image">
-            <MobileImgGroup
-              imgs={thumnail ? thumnail : []}
-              title={title ? title : "Title Not Found"}
-            />
+            <MobileImgGroup imgs={thumnail ? thumnail : []} />
           </div>
         )}
         <div className="detail">

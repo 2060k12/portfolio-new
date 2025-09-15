@@ -7,11 +7,13 @@ const ProjectList = () => {
 
   return (
     <div className="page4">
+      <h1>Project</h1>
+
       <div className="projects">
         {data.map((each) => (
           <EachProjectCard
             onClick={() => {
-              navigate(`project/${each.id}`);
+              navigate(`work/${each.id}`);
             }}
             key={each.id}
             title={each.title}
