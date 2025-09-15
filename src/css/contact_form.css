@@ -4,6 +4,7 @@
 }
 .contact-form h1 {
   font-size: 5vw;
+  width: fit-content;
 }
 
 .contact-form .form {

@@ -1,0 +1,67 @@
+body h1:hover,
+body h2:hover,
+body h3:hover,
+body h4:hover,
+body h5:hover {
+  background-color: white;
+  color: black;
+  padding: 30px;
+  border-radius: 20px;
+  transition: all 0.5s ease-in;
+}
+
+body p:hover {
+  background-color: white;
+  color: black;
+  padding: 40px;
+  border-radius: 20px;
+  font-size: 1.5em;
+  transition: all 0.2s ease-in;
+}
+
+body .tech-stacks:hover {
+  background-color: white;
+  color: black;
+  /* padding: 20px; */
+  border-radius: 20px;
+  transition: all 0.5s ease-in;
+}
+
+body .feature:hover,
+body p:hover {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 1.5em;
+  transition: all 0.5s ease-in;
+}
+
+body .tech-stacks h2:hover,
+body .tech-stacks h3:hover,
+body .page4 h3:hover,
+body .page4 h2:hover,
+body .page4 h5:hover,
+body .feature h4:hover,
+body .feature h5:hover,
+body .contact-form h3:hover,
+body .contact-form h4:hover {
+  background-color: transparent;
+  /* color: black; */
+  padding: 0px;
+  border-radius: 0px;
+  transition: all 0.5s ease-in;
+}
+
+body .contact-form h1:hover {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+body .contact-form .contact-card:hover {
+  background-color: white;
+  color: black;
+  padding: 30px;
+  border-radius: 20px;
+  transition: all 0.5s ease-in;
+}

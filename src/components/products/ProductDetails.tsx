@@ -2,6 +2,8 @@ import { useEffect, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { useParams } from "react-router-dom";
 import gsap from "gsap";
+import "./../../css/project_detail.css";
+import "./../../css/crusor.css";
 import data from "././../../../projects.json";
 const ProductDetails = () => {
   const titleRef = useRef(null);
@@ -10,10 +12,17 @@ const ProductDetails = () => {
   const ss = useRef(null);
 
   const { id } = useParams();
-
+  const cursorRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    console.log(id);
-  });
+    const handleMouseMove = (e: MouseEvent) => {
+      if (cursorRef.current) {
+        cursorRef.current.style.left = `${e.clientX}px`;
+        cursorRef.current.style.top = `${e.clientY}px`;
+      }
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
 
   const project = data.find((item) => item.id === id);
 
@@ -42,6 +51,7 @@ const ProductDetails = () => {
 
   return project?.id ? (
     <div className="project-detail">
+      <div className="crsr"></div>
       <div ref={titleRef} className="title">
         <h1>{project?.title}</h1>
         <img src="/github-mark-white.svg" alt="" height="50" />

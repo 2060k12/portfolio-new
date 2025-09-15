@@ -10,6 +10,7 @@
 
 .about-page h1 {
   font-size: 10vw;
+  width: fit-content;
 }
 
 .about-page .container {
