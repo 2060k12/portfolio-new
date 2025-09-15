@@ -1,9 +1,38 @@
-import React from "react";
-
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 const ProductDetails = () => {
+  const titleRef = useRef(null);
+  const left = useRef(null);
+  const right = useRef(null);
+  const ss = useRef(null);
+
+  useGSAP(() => {
+    gsap.from(titleRef.current, {
+      y: -200,
+      duration: 1,
+      opacity: 0,
+    });
+    gsap.from(left.current, {
+      x: -200,
+      duration: 1,
+      opacity: 0,
+    });
+    gsap.from(right.current, {
+      x: 200,
+      duration: 1,
+      opacity: 0,
+    });
+    gsap.from(ss.current, {
+      y: 200,
+      duration: 1,
+      opacity: 0,
+    });
+  }, []);
+
   return (
     <div className="project-detail">
-      <div className="title">
+      <div ref={titleRef} className="title">
         <h1>Social Media App</h1>
         <img src="/github-mark-white.svg" alt="" height="50" />
       </div>
@@ -19,6 +48,7 @@ const ProductDetails = () => {
       <div className="overview">
         <div className="overview-video-grid">
           <iframe
+            ref={left}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/QS28nnpzoFY?si=zfhN84Qv6qalv_J-"
@@ -28,7 +58,7 @@ const ProductDetails = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe>
-          <div className="right">
+          <div ref={right} className="right">
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
               dolorem nihil fugit minima, unde accusantium quos optio tempora
@@ -55,7 +85,7 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
-      <div className="ss-section">
+      <div ref={ss} className="ss-section">
         <h2>Screenshots</h2>
 
         <div className="screenshots-imgs">

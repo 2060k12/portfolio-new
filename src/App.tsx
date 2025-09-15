@@ -1,10 +1,8 @@
-import React from "react";
-import HeroPage from "./components/HeroPage";
 import TechIconPage from "./components/TechIconPage";
-import ProjectPage from "./components/ProjectPage";
-import ProjectList from "./components/ProjectList";
+import ProjectPage from "./components/products/ProjectPage";
+import ProjectList from "./components/products/ProjectList";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ProductDetails from "./components/ProductDetails";
+import ProductDetails from "./components/products/ProductDetails";
 import HomePage from "./components/HomePage";
 
 const App = () => {

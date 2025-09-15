@@ -3,17 +3,22 @@
   margin: 0;
   padding: 0;
 }
-body,
-html {
+html,
+body {
   width: 100%;
   height: 100%;
-  background-color: black;
+}
+
+body {
   color: white;
+  background-color: black;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 
 #main {
+  background-color: black;
+
   width: 100%;
   height: 100%;
 }
@@ -61,18 +66,26 @@ html {
 }
 
 .mobile-ss-group img {
-  width: 9vw;
+  width: 8vw;
 }
 
 .desktok-ss img {
-  width: 27vw;
+  width: 25vw;
+}
+
+.desktok-ss,
+.mobile-group {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1vw;
 }
 
 .page4 .project-grid {
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(3, auto);
-  gap: 1vw;
+  gap: 2vw;
 }
 
 .project-detail {

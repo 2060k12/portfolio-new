@@ -1,8 +1,9 @@
-import React from "react";
 import HeroPage from "./HeroPage";
 import TechIconPage from "./TechIconPage";
-import ProjectPage from "./ProjectPage";
-import ProjectList from "./ProjectList";
+import ProjectPage from "./products/ProjectPage";
+import ProjectList from "./products/ProjectList";
+import ContactForm from "./contact/ContactForm";
+import Footer from "./Footer";
 
 const HomePage = () => {
   return (
@@ -11,6 +12,8 @@ const HomePage = () => {
       <TechIconPage />
       <ProjectPage />
       <ProjectList />
+      <ContactForm />
+      <Footer />
     </div>
   );
 };

@@ -1,7 +1,8 @@
-{
-  "project1": {
+[
+  {
     "title": "Social Media App",
-    "sub-title": "Kotlin, Android",
+    "tech": "Kotlin, Android",
+    "subTitle": "Kotlin, Android",
     "github": "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f36de3a71a14c497d5446_github-mark-white.png",
     "overview": [
       "Made with Kotlin",
@@ -34,5 +35,77 @@
       "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668fc62dff7276e1b7bb82f1_Screenshot_20240711_213428-p-500.png",
       "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668fbc372d0090ff946b46b6_Screenshot_20240711_210038-p-500.png"
     ]
+  },
+  {
+    "title": "Social Media App",
+    "tech": "Kotlin, Android",
+    "subTitle": "Kotlin, Android",
+    "github": "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f36de3a71a14c497d5446_github-mark-white.png",
+    "overview": [
+      "Made with Kotlin",
+      "Using XML for layouts",
+      "Firebase as backend : Firestore, Firestorage, Auth",
+      "Uses Device Camera",
+      "MVVM Architecture",
+      "LiveData for reactive programming",
+      "ViewBinding for view interactions",
+      "Fragment-based UI"
+    ],
+    "features": [
+      "Photo Sharing",
+      "Realtime chat",
+      "Like/ comment on posts",
+      "share and view stories which gets del in 24 hrs",
+      "edit profile info including profile image",
+      "Search profiles",
+      "Add / remove Followings and followers"
+    ],
+    "video": "https://youtu.be/QS28nnpzoFY",
+    "screenshots": [
+      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f39562232881730a5a1d7_photo1-p-800.jpg",
+      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f3a77bd169f31c2f00700_photo3-p-800.jpg",
+      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f3a7653e5e2203087efa6_photo4-p-800.jpg",
+      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f3a76acc37f6a5b526957_photo5-p-800.jpg"
+    ],
+    "thumnail": [
+      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668fbcff8eaf014dbcc56081_Screenshot_20240711_210658-p-500.png",
+      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668fc62dff7276e1b7bb82f1_Screenshot_20240711_213428-p-500.png",
+      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668fbc372d0090ff946b46b6_Screenshot_20240711_210038-p-500.png"
+    ]
+  },
+  {
+    "title": "Social Media App",
+    "tech": "Kotlin, Android",
+    "subTitle": "Kotlin, Android",
+    "github": "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f36de3a71a14c497d5446_github-mark-white.png",
+    "overview": [
+      "Made with Kotlin",
+      "Using XML for layouts",
+      "Firebase as backend : Firestore, Firestorage, Auth",
+      "Uses Device Camera",
+      "MVVM Architecture",
+      "LiveData for reactive programming",
+      "ViewBinding for view interactions",
+      "Fragment-based UI"
+    ],
+    "features": [
+      "Photo Sharing",
+      "Realtime chat",
+      "Like/ comment on posts",
+      "share and view stories which gets del in 24 hrs",
+      "edit profile info including profile image",
+      "Search profiles",
+      "Add / remove Followings and followers"
+    ],
+    "video": "https://youtu.be/QS28nnpzoFY",
+    "screenshots": [
+      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f39562232881730a5a1d7_photo1-p-800.jpg",
+      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f3a77bd169f31c2f00700_photo3-p-800.jpg",
+      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f3a7653e5e2203087efa6_photo4-p-800.jpg",
+      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f3a76acc37f6a5b526957_photo5-p-800.jpg"
+    ],
+    "thumnail": [
+      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668fc9ba752903a8eb2e2927_Screenshot%202024-07-11%20at%2010.01.35%E2%80%AFPM.png"
+    ]
   }
-}
+]
