@@ -22,7 +22,7 @@ const HomePage = () => {
 
   return (
     <div id="main">
-      <div class="crsr" ref={cursorRef}></div>
+      <div className="crsr" ref={cursorRef}></div>
       <HeroPage />
       <TechIconPage />
       <About />

@@ -53,9 +53,20 @@ body .contact-form h4:hover {
   transition: all 0.5s ease-in;
 }
 
-body .contact-form h1:hover {
+body .contact-form h1:hover,
+body .page4 h1,
+body .about-page h1 {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+body .loader h1:hover,
+body .loader h2:hover,
+body .loader h5:hover,
+body .loader h6:hover {
+  padding: 0%;
+  color: white;
+  background-color: transparent;
 }
 
 body .contact-form .contact-card:hover {
