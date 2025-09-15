@@ -7,15 +7,6 @@ import Footer from "./Footer";
 const HomePage = () => {
   return (
     <div id="main" data-scroll-container style={{ overflow: "hidden" }}>
-      <h1
-        style={{
-          backgroundColor: "red",
-          textAlign: "center",
-          padding: "1vw",
-        }}
-      >
-        Hang Tight! I’m Making Some Improvements
-      </h1>
       <HeroPage />
       <TechIconPage />
       <ProjectList />

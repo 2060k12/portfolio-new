@@ -14,9 +14,9 @@ const TechIconPage = () => {
       x: "-40vw",
       opacity: 0,
       duration: 2,
-
       scrollTrigger: {
         trigger: first.current,
+        markers: true,
         start: "top 70%",
         end: "top 50%",
         scrub: true,
@@ -27,9 +27,9 @@ const TechIconPage = () => {
       opacity: 0,
       duration: 2,
       scrollTrigger: {
-        trigger: first.current,
+        trigger: second.current,
         start: "top 70%",
-        end: "top 50%",
+        end: "top 30%",
         scrub: true,
       },
     });
@@ -39,9 +39,9 @@ const TechIconPage = () => {
       duration: 2,
 
       scrollTrigger: {
-        trigger: first.current,
+        trigger: third.current,
         start: "top 70%",
-        end: "top 40%",
+        end: "top 0%",
         scrub: true,
       },
     });
@@ -51,11 +51,10 @@ const TechIconPage = () => {
       duration: 2,
 
       scrollTrigger: {
-        trigger: first.current,
+        trigger: forth.current,
         start: "top 70%",
-        end: "top 40%",
+        end: "top 0%",
         scrub: true,
-        markers: true,
       },
     });
   });
