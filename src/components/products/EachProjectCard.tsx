@@ -1,21 +1,28 @@
 import DesktopImg from "./DesktopImg";
 import MobileImgGroup from "./MobileImgGroup";
 
-export interface Project {
+export interface ProjectInterface {
   title?: string;
   subTitle?: string;
   github?: string;
-  overview?: string[];
+  overview?: string;
   features?: string[];
   video?: string;
   screenshots?: string[];
   thumnail?: string[];
   tech?: string;
+  onClick: () => void;
 }
 
-const EachProjectCard = ({ title, subTitle, tech, thumnail }: Project) => {
+const EachProjectCard = ({
+  title,
+  subTitle,
+  tech,
+  thumnail,
+  onClick,
+}: ProjectInterface) => {
   return (
-    <div className="update-container">
+    <div className="update-container" onClick={onClick}>
       <div className="elem1">
         <h3>{title}</h3>
 

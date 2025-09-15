@@ -1,12 +1,19 @@
 import EachProjectCard from "./EachProjectCard";
 import "./../../css/project.css";
 import data from "./../../../projects.json";
+import { useNavigate } from "react-router-dom";
 const ProjectList = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="page4">
       <div className="projects">
         {data.map((each) => (
           <EachProjectCard
+            onClick={() => {
+              navigate(`project/${each.id}`);
+            }}
+            key={each.id}
             title={each.title}
             subTitle={each.subTitle}
             tech={each.tech}

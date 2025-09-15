@@ -1,19 +1,11 @@
 [
   {
+    "id": "1",
     "title": "Social Media App",
     "tech": "Kotlin, Android",
     "subTitle": "Kotlin, Android",
     "github": "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f36de3a71a14c497d5446_github-mark-white.png",
-    "overview": [
-      "Made with Kotlin",
-      "Using XML for layouts",
-      "Firebase as backend : Firestore, Firestorage, Auth",
-      "Uses Device Camera",
-      "MVVM Architecture",
-      "LiveData for reactive programming",
-      "ViewBinding for view interactions",
-      "Fragment-based UI"
-    ],
+    "overview": "This mobile app is built with Kotlin and follows the MVVM architecture for clean and maintainable code. The UI uses XML layouts and fragments, combined with ViewBinding for easy view interactions. LiveData enables reactive updates, ensuring the interface stays in sync with data changes. Firebase powers the backend, including Firestore for real-time database, Firestorage for media, and Authentication for secure user management. The app also utilizes the device camera to enhance user functionality, providing a practical and engaging experience overall.",
     "features": [
       "Photo Sharing",
       "Realtime chat",
@@ -23,7 +15,7 @@
       "Search profiles",
       "Add / remove Followings and followers"
     ],
-    "video": "https://youtu.be/QS28nnpzoFY",
+    "video": "https://www.youtube.com/embed/QS28nnpzoFY?si=Jzt0U8M7k7H7F50D",
     "screenshots": [
       "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f39562232881730a5a1d7_photo1-p-800.jpg",
       "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f3a77bd169f31c2f00700_photo3-p-800.jpg",
@@ -37,75 +29,198 @@
     ]
   },
   {
-    "title": "Social Media App",
+    "id": "2",
+    "title": "E-commerce",
     "tech": "Kotlin, Android",
     "subTitle": "Kotlin, Android",
-    "github": "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f36de3a71a14c497d5446_github-mark-white.png",
-    "overview": [
-      "Made with Kotlin",
-      "Using XML for layouts",
-      "Firebase as backend : Firestore, Firestorage, Auth",
-      "Uses Device Camera",
-      "MVVM Architecture",
-      "LiveData for reactive programming",
-      "ViewBinding for view interactions",
-      "Fragment-based UI"
-    ],
+    "github": "https://github.com/2060k12/Ecommerce",
+    "overview": "This e-commerce mobile app, built with **Kotlin**, utilizes **Jetpack Compose** for a modern, declarative UI. It follows the **MVVM** architecture for a clear separation of concerns. **Firebase** handles the backend, including **Firestore** for the database, **Firebase Storage** for images, and **Firebase Authentication** for user management. A **Room database** is used for local data persistence, specifically for the shopping cart. The app uses the **Coil** library for efficient image loading and a **Horizontal Pager** to display product feature images, providing a smooth user experience.",
     "features": [
-      "Photo Sharing",
-      "Realtime chat",
-      "Like/ comment on posts",
-      "share and view stories which gets del in 24 hrs",
-      "edit profile info including profile image",
-      "Search profiles",
-      "Add / remove Followings and followers"
+      "Admin and Customer Login",
+      "Add/ remove products (admin)",
+      "Add to deals (admin)",
+      "Decrease product price (admin)",
+      "Add Images from gallery (admin)",
+      "Confirm / cancel / refund order (admin)",
+      "Search products",
+      "See deals",
+      "Add to cart, Checkout",
+      "Edit user details",
+      "add review/ rating"
     ],
-    "video": "https://youtu.be/QS28nnpzoFY",
+    "video": "https://www.youtube.com/embed/Y9jLqAwjwjM?si=hmP1hG4uCEEstkt9",
+    "screenshots": [],
+    "thumnail": []
+  },
+  {
+    "id": "3",
+    "title": "Music Review Website",
+    "tech": "ReactJs, JavaScript, TailwindCSS",
+    "subTitle": "ReactJs, JavaScript, TailwindCSS",
+    "github": "https://pranish.webflow.io/work/project-3#",
+    "overview": "This music review website is built with **ReactJs** and **JavaScript** for the front end, using **TailwindCSS** for a utility-first styling approach. **Firebase** serves as the backend, providing **Authentication**, **Firebase Storage**, and a **Firestore database** for real-time data updates. The site is hosted on **Netlify**, ensuring reliable deployment and quick access. Its backend is designed to update in real-time, offering a dynamic and responsive user experience.",
+    "features": [
+      "Add and remove both albums and artists (Login required)",
+      "Add reviews",
+      "View Other's reviews",
+      "Login feature",
+      "Change user details",
+      "Favourites",
+      "Search both artist and albums",
+      "Filter"
+    ],
+    "video": "https://www.youtube.com/embed/Y5Rx-M1wY-s?si=35l_1eGQKcZVjbyV",
+    "screenshots": [],
+    "thumnail": []
+  },
+  {
+    "id": "4",
+    "title": "Music Review App",
+    "tech": "Java, Android",
+    "subTitle": "Java, Android",
+    "github": "https://github.com/yourusername/music-review-app",
+    "overview": "A music review application built using Java and Android. It follows the MVVM architecture and utilizes LiveData, Room Database, XML layouts, Fragments, ViewBinding, RecyclerView, and Picasso for image loading.",
+    "features": [
+      "User login and registration",
+      "Add new albums and artists",
+      "Change email, password, name, or profile images",
+      "Add ratings and reviews",
+      "Browse through all listed albums and artists",
+      "Automatic scroll on Hero section every 1.5 seconds"
+    ],
+    "video": "https://www.youtube.com/embed/your_video_id",
     "screenshots": [
-      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f39562232881730a5a1d7_photo1-p-800.jpg",
-      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f3a77bd169f31c2f00700_photo3-p-800.jpg",
-      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f3a7653e5e2203087efa6_photo4-p-800.jpg",
-      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f3a76acc37f6a5b526957_photo5-p-800.jpg"
+      "https://cdn.prod.website-files.com/your_image1.jpg",
+      "https://cdn.prod.website-files.com/your_image2.jpg",
+      "https://cdn.prod.website-files.com/your_image3.jpg",
+      "https://cdn.prod.website-files.com/your_image4.jpg"
     ],
     "thumnail": [
-      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668fbcff8eaf014dbcc56081_Screenshot_20240711_210658-p-500.png",
-      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668fc62dff7276e1b7bb82f1_Screenshot_20240711_213428-p-500.png",
-      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668fbc372d0090ff946b46b6_Screenshot_20240711_210038-p-500.png"
+      "https://cdn.prod.website-files.com/your_thumbnail1.jpg",
+      "https://cdn.prod.website-files.com/your_thumbnail2.jpg",
+      "https://cdn.prod.website-files.com/your_thumbnail3.jpg"
     ]
   },
   {
-    "title": "Social Media App",
-    "tech": "Kotlin, Android",
-    "subTitle": "Kotlin, Android",
-    "github": "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f36de3a71a14c497d5446_github-mark-white.png",
-    "overview": [
-      "Made with Kotlin",
-      "Using XML for layouts",
-      "Firebase as backend : Firestore, Firestorage, Auth",
-      "Uses Device Camera",
-      "MVVM Architecture",
-      "LiveData for reactive programming",
-      "ViewBinding for view interactions",
-      "Fragment-based UI"
-    ],
+    "id": "5",
+    "title": "Voice Recorder",
+    "tech": "Swift, UIKit, iOS",
+    "subTitle": "Swift, UIKit, iOS",
+    "github": "https://github.com/yourusername/voice-recorder",
+    "overview": "An iOS voice recording application developed using Swift and UIKit. It integrates Firebase for backend services and utilizes AVFoundation for audio recording and playback.",
     "features": [
-      "Photo Sharing",
-      "Realtime chat",
-      "Like/ comment on posts",
-      "share and view stories which gets del in 24 hrs",
-      "edit profile info including profile image",
-      "Search profiles",
-      "Add / remove Followings and followers"
+      "Record audio",
+      "Play recorded audio",
+      "Convert audio to video with an image",
+      "Unsplash API integration for images",
+      "Choose images from the gallery",
+      "Upload recordings to Firebase Storage",
+      "Search users by email and play their recordings"
     ],
-    "video": "https://youtu.be/QS28nnpzoFY",
+    "video": "https://www.youtube.com/embed/your_video_id",
     "screenshots": [
-      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f39562232881730a5a1d7_photo1-p-800.jpg",
-      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f3a77bd169f31c2f00700_photo3-p-800.jpg",
-      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f3a7653e5e2203087efa6_photo4-p-800.jpg",
-      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668f3a76acc37f6a5b526957_photo5-p-800.jpg"
+      "https://cdn.prod.website-files.com/your_image1.jpg",
+      "https://cdn.prod.website-files.com/your_image2.jpg",
+      "https://cdn.prod.website-files.com/your_image3.jpg",
+      "https://cdn.prod.website-files.com/your_image4.jpg"
     ],
     "thumnail": [
-      "https://cdn.prod.website-files.com/668f2a25f4beafa35bba213a/668fc9ba752903a8eb2e2927_Screenshot%202024-07-11%20at%2010.01.35%E2%80%AFPM.png"
+      "https://cdn.prod.website-files.com/your_thumbnail1.jpg",
+      "https://cdn.prod.website-files.com/your_thumbnail2.jpg",
+      "https://cdn.prod.website-files.com/your_thumbnail3.jpg"
+    ]
+  },
+  {
+    "id": "6",
+    "title": "Bill Splitting App",
+    "tech": "React Native, Firebase",
+    "subTitle": "React Native, Firebase",
+    "github": "https://github.com/yourusername/bill-splitting-app",
+    "overview": "A cross-platform bill splitting application developed using React Native and Firebase. It allows users to share bills with contacts and manage expenses efficiently.",
+    "features": [
+      "Secure login with Firebase Authentication",
+      "Add and remove users from expenses",
+      "Settle bills",
+      "In-app notifications",
+      "Profile management",
+      "View expense details",
+      "Remove users from any expenses",
+      "Update expenses"
+    ],
+    "video": "https://www.youtube.com/embed/your_video_id",
+    "screenshots": [
+      "https://cdn.prod.website-files.com/your_image1.jpg",
+      "https://cdn.prod.website-files.com/your_image2.jpg",
+      "https://cdn.prod.website-files.com/your_image3.jpg",
+      "https://cdn.prod.website-files.com/your_image4.jpg"
+    ],
+    "thumnail": [
+      "https://cdn.prod.website-files.com/your_thumbnail1.jpg",
+      "https://cdn.prod.website-files.com/your_thumbnail2.jpg",
+      "https://cdn.prod.website-files.com/your_thumbnail3.jpg"
+    ]
+  },
+  {
+    "id": "7",
+    "title": "Workplace Management Application - Full Stack",
+    "tech": "React Native, ExpressJS, NodeJS, AWS",
+    "subTitle": "React Native, ExpressJS, NodeJS, AWS",
+    "github": "https://github.com/yourusername/workplace-management-app",
+    "overview": "A full-stack workplace management application developed using React Native for mobile platforms and ExpressJS with NodeJS for the backend. It includes features like real-time communication, role-based access, and geofencing.",
+    "features": [
+      "User authentication with role-based access",
+      "Multi-server structure for different offices",
+      "Channel-based communication",
+      "Clock in/out functionality",
+      "Leave requests management",
+      "Document upload and validation",
+      "Real-time chat",
+      "Roster and schedule view",
+      "Income overview",
+      "Push and in-app notifications",
+      "Custom chat themes"
+    ],
+    "video": "https://www.youtube.com/embed/your_video_id",
+    "screenshots": [
+      "https://cdn.prod.website-files.com/your_image1.jpg",
+      "https://cdn.prod.website-files.com/your_image2.jpg",
+      "https://cdn.prod.website-files.com/your_image3.jpg",
+      "https://cdn.prod.website-files.com/your_image4.jpg"
+    ],
+    "thumnail": [
+      "https://cdn.prod.website-files.com/your_thumbnail1.jpg",
+      "https://cdn.prod.website-files.com/your_thumbnail2.jpg",
+      "https://cdn.prod.website-files.com/your_thumbnail3.jpg"
+    ]
+  },
+  {
+    "id": "8",
+    "title": "Bakery Website",
+    "tech": "Next.js, TypeScript, PostgreSQL",
+    "subTitle": "Next.js, TypeScript, PostgreSQL",
+    "github": "https://github.com/yourusername/bakery-website",
+    "overview": "A bakery website developed using Next.js and TypeScript. It features a CMS for managing promotions and orders, integration with TikTok for video content, and a custom cake ordering system.",
+    "features": [
+      "CMS features for managing promotions",
+      "Create and manage orders",
+      "Upload content",
+      "Explore page for browsing",
+      "View TikTok videos by the bakery",
+      "Checkout functionality",
+      "Custom cake orders",
+      "Add to cart"
+    ],
+    "video": "https://www.youtube.com/embed/your_video_id",
+    "screenshots": [
+      "https://cdn.prod.website-files.com/your_image1.jpg",
+      "https://cdn.prod.website-files.com/your_image2.jpg",
+      "https://cdn.prod.website-files.com/your_image3.jpg",
+      "https://cdn.prod.website-files.com/your_image4.jpg"
+    ],
+    "thumnail": [
+      "https://cdn.prod.website-files.com/your_thumbnail1.jpg",
+      "https://cdn.prod.website-files.com/your_thumbnail2.jpg",
+      "https://cdn.prod.website-files.com/your_thumbnail3.jpg"
     ]
   }
 ]
