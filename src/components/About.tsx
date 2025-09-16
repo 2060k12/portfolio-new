@@ -8,34 +8,35 @@ import { useRef } from "react";
 const About = () => {
   gsap.registerPlugin(ScrollTrigger);
 
-  const titleRef = useRef(null);
-  const bodyRef = useRef(null);
-  const itemsRef = useRef(null);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const bodyRef = useRef<HTMLParagraphElement>(null);
+  const itemsRef = useRef<HTMLDivElement>(null);
   useGSAP(() => {
     const tl = gsap.timeline();
 
     tl.from(titleRef.current, {
-      duration: 2,
-      y: -100,
+      duration: 1,
+      y: -10,
       opacity: 0,
       stagger: 0.2,
       scrollTrigger: {
         trigger: titleRef.current,
         scroller: window,
-        start: "top 70%",
+        start: "top 90%",
+        scrub: 2,
       },
     });
 
     tl.from(bodyRef.current, {
       duration: 2,
-      y: -100,
+      y: 100,
       opacity: 0,
       stagger: 0.2,
-
       scrollTrigger: {
-        trigger: bodyRef.current,
+        trigger: titleRef.current,
         scroller: window,
-        start: "top 70%",
+        start: "top 90%",
+        scrub: 2,
       },
     });
 
@@ -45,9 +46,10 @@ const About = () => {
       opacity: 0,
       stagger: 0.2,
       scrollTrigger: {
-        trigger: itemsRef.current,
+        trigger: titleRef.current,
         scroller: window,
         start: "top 70%",
+        scrub: 2,
       },
     });
   });

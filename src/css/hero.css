@@ -97,10 +97,14 @@
 /* hero */
 .page1 h1 {
   font-size: 8vw;
+  transition: background-color 0.3s ease-in, padding 0.3s ease-in,
+    border-radius 1s ease-in, color 0.5s ease-in;
 }
 
 .page1 h2 {
   font-size: 4vw;
+  transition: background-color 0.3s ease-in, padding 0.3s ease-in,
+    border-radius 1s ease-in, color 0.5s ease-in;
 }
 
 .page1 {

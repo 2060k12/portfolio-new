@@ -51,10 +51,14 @@ const ProductDetails = () => {
 
   return project?.id ? (
     <div className="project-detail">
-      <div className="crsr"></div>
+      {/* <div className="crsr"></div> */}
       <div ref={titleRef} className="title">
         <h1>{project?.title}</h1>
-        <img src="/github-mark-white.svg" alt="" height="50" />
+        <a
+          href={project.github ? project.github : "https://github.com/2060k12"}
+        >
+          <img src="/icons/github-mark-white.svg" alt="" height="50" />
+        </a>
       </div>
 
       <div className="sub-title">
@@ -67,36 +71,39 @@ const ProductDetails = () => {
       <div className="vdo"></div>
       <div className="overview">
         <div className="overview-video-grid">
-          <iframe
-            ref={left}
-            width="560"
-            height="315"
-            src={project?.video}
-            title="YouTube video player"
-            frameBorder={0}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; muted; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
+          <div className="div">
+            <div ref={ss} className="ss-section">
+              <iframe
+                ref={left}
+                width="560"
+                height="315"
+                src={project?.video}
+                title="YouTube video player"
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; muted; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+              <h3 style={{ marginTop: 10, marginBottom: 20 }}>Screenshots</h3>
+
+              <div className="screenshots-imgs">
+                {project.screenshot.map((item) => (
+                  <img src={item} alt="" />
+                ))}
+              </div>
+            </div>
+          </div>
+
           <div ref={right} className="right">
             <p>{project.overview}</p>
             <br />
-            <div className="feature">
+            <p>
               <h4>Features</h4>
               {project?.features.map((item) => (
-                <h5>{item}</h5>
+                <h6>{item}</h6>
               ))}
-            </div>
+            </p>
           </div>
-        </div>
-      </div>
-      <div ref={ss} className="ss-section">
-        <h2>Screenshots</h2>
-
-        <div className="screenshots-imgs">
-          {project.screenshot.map((item) => (
-            <img src={item} alt="" />
-          ))}
         </div>
       </div>
     </div>

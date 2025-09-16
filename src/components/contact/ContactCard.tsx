@@ -1,22 +1,19 @@
+import type { ReactNode } from "react";
 interface Props {
   title: string;
   detail: string;
-  onClick: () => void;
+  icon: ReactNode;
+  onClick?: () => void;
 }
-const ContactCard = ({ title, detail, onClick }: Props) => {
+const ContactCard = ({ title, detail, icon, onClick }: Props) => {
   return (
-    <div className="contact-card">
+    <div className="contact-card" onClick={onClick}>
+      <div className="card-right">{icon}</div>
       <div className="card-left">
         <div className="detail">
           <h3>{title}</h3>
           <h4>{detail}</h4>
         </div>
-      </div>
-
-      <div className="card-right">
-        <button onClick={onClick}>
-          <i className="ri-arrow-right-up-fill"></i>
-        </button>
       </div>
     </div>
   );

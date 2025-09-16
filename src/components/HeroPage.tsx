@@ -4,7 +4,7 @@ import LoadingScreen from "./LoadingScreen";
 const HeroPage = () => {
   return (
     <>
-      <LoadingScreen />
+      {/* <LoadingScreen /> */}
 
       <div className="page1">
         <h1>Pranish Pathak</h1>

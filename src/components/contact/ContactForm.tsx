@@ -1,43 +1,34 @@
 import ContactCard from "./ContactCard";
 import "./../..//css/contact_form.css";
-import { useEffect, useState } from "react";
+
+import { RiLinkedinBoxFill, RiMailFill, RiMapPin2Fill } from "@remixicon/react";
 const ContactForm = () => {
-  const [time, setTime] = useState("");
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const sydneyTime = new Date().toLocaleTimeString("en-AU", {
-        timeZone: "Australia/Sydney",
-        hour12: true,
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit",
-      });
-      setTime(sydneyTime);
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
   return (
     <div className="contact-form">
       <div className="form">
         <div className="left">
           <h1>Get in touch</h1>
+          <p>
+            I’m always open to discussing new projects, collaborations, or just
+            a friendly hello.
+          </p>
           <div className="details">
             <ContactCard
               detail="hello@itspranish.dev"
               title="Email"
-              onClick={() => {}}
+              icon={<RiMailFill color="white" size={40} />}
             />
+
             <ContactCard
-              title="Location"
+              icon={<RiMapPin2Fill style={{ color: "white" }} size={40} />}
+              title="Located"
               detail="Sydney, Australia"
-              onClick={() => {}}
             />
+
             <ContactCard
-              title="Current Time"
-              detail={time}
-              onClick={() => {}}
+              icon={<RiLinkedinBoxFill color="white" size={40} />}
+              title="Linkedin"
+              detail="Pranish Pathak"
             />
           </div>
         </div>
@@ -50,7 +41,9 @@ const ContactForm = () => {
             id="message-box"
             placeholder="Message"
           ></textarea>
-          <button>Submit</button>
+          <button>
+            <span>Submit Now</span>
+          </button>
         </div>
       </div>
     </div>

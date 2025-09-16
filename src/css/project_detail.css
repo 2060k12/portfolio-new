@@ -5,7 +5,8 @@
 }
 
 .project-detail h1 {
-  font-size: 8vw;
+  font-size: 7vw;
+  transition: all 0.5s ease-in;
 }
 
 .project-detail .title {
@@ -49,7 +50,7 @@
   grid-template-columns: repeat(2, auto);
   justify-content: space-between;
   gap: 5vw;
-  margin-top: 2vw;
+  /* margin-top: 2vw; */
 }
 .project-detail .ss-section {
   margin-top: 2vw;
@@ -57,6 +58,11 @@
 .project-detail .ss-section h2 {
   font-size: 2em;
   font-weight: 300;
+}
+
+.feature {
+  transition: background-color 0.5s ease-in, padding 0.5s ease-in,
+    border-radius 0.5s ease-in, margin 0.5s ease-in;
 }
 
 .project-detail .screenshots-imgs {
@@ -96,4 +102,14 @@
     height: 25vw;
     border-radius: 10px;
   }
+}
+
+.project-detail .right h6 {
+  font-weight: 100;
+  font-size: 0.8em;
+}
+
+.project-detail img {
+  transition: all 0.5s ease-in;
+  transition: border 0.5s ease-in;
 }

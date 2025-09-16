@@ -9,29 +9,33 @@ import { useGSAP } from "@gsap/react";
 
 const ProjectList = () => {
   const navigate = useNavigate();
-  const titleRef = useRef(null);
+  const titleRef = useRef<HTMLHeadingElement>(null);
   const listRef = useRef<HTMLDivElement>(null);
 
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
     gsap.from(titleRef.current, {
       opacity: 0,
-      y: 100,
+      y: -30,
       duration: 1,
       scrollTrigger: {
         trigger: titleRef.current,
-        start: "top 50%",
+        start: "top 95%",
+        end: "top 100%",
+        scrub: 0.5,
+        markers: true, // for debugging
       },
     });
     const cards = listRef?.current?.querySelectorAll(".each-project-card");
     gsap.from(cards!, {
       opacity: 0,
-      y: 100,
+      y: 10,
       duration: 0.5,
       stagger: 0.3,
       scrollTrigger: {
-        trigger: listRef.current,
-        start: "top 60%",
+        trigger: titleRef.current,
+        start: "top 70%",
+        scrub: 1,
       },
     });
   });

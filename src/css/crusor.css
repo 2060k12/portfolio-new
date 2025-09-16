@@ -23,26 +23,62 @@ body p:hover {
   /* padding: 40px; */
   border-radius: 20px;
   font-size: 1.5em;
-  transition: all 0.2s ease-in;
+  transition: all 0.5s ease-in;
 }
-
+body .tech-stacks {
+  transition: all 0.5s ease-in;
+}
 body .tech-stacks:hover {
   background-color: white;
   color: black;
   /* padding: 20px; */
   border-radius: 20px;
-  transition: all 0.5s ease-in;
 }
 
-body .feature:hover,
 body p:hover {
   background-color: white;
   color: black;
   padding: 15px;
   border-radius: 20px;
   font-size: 1.43em;
-  margin: -25px;
-  transition: all 0.5s ease-in;
+  margin-left: -25px;
+  margin-right: -25px;
+}
+.project-detail h1:hover {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  font-size: 6vw;
+  margin-bottom: 1vw;
+}
+
+.feature h4:hover,
+.feature h5:hover {
+  padding: 0;
+  background-color: transparent;
+}
+
+.feature:hover {
+  padding: 30px;
+  scale: 1.08;
+  background-color: white;
+  color: black;
+}
+
+.project-detail h3:hover {
+  border-radius: 10px;
+  padding: 10px;
+  margin: -10px;
+}
+
+.project-detail p:hover {
+  padding: 30px;
+  scale: 1.01;
+}
+
+.project-detail .right h4:hover {
+  padding: 0;
+  background-color: transparent;
 }
 
 body .tech-stacks h2:hover,
@@ -50,15 +86,11 @@ body .tech-stacks h3:hover,
 body .page4 h3:hover,
 body .page4 h2:hover,
 body .page4 h5:hover,
-body .feature h4:hover,
-body .feature h5:hover,
 body .contact-form h3:hover,
 body .contact-form h4:hover {
   background-color: transparent;
-  /* color: black; */
   padding: 0px;
   border-radius: 0px;
-  transition: all 0.5s ease-in;
 }
 
 body .page4 h1:hover,
@@ -67,6 +99,8 @@ body .about-page h1:hover {
   padding-right: 20px;
   border-radius: 20px;
   font-size: 8vw;
+  margin-bottom: 2.3vw;
+  transition: all 0.2s ease-in;
 }
 
 body .contact-form h1:hover {
@@ -76,6 +110,8 @@ body .contact-form h1:hover {
   padding-right: 10px;
   border-radius: 20px;
   font-size: 4.5vw;
+  margin-right: 1.5vw;
+  margin-bottom: -0.1vw;
 }
 
 body .loader h1:hover,
@@ -87,10 +123,22 @@ body .loader h6:hover {
   background-color: transparent;
 }
 
-body .contact-form .contact-card:hover {
+body .contact-form .contact-card .card-left:hover {
   background-color: white;
   color: black;
-  /* padding: 30px; */
   border-radius: 20px;
-  transition: all 0.5s ease-in;
+  border-radius: 10px;
+  transition: all 0.2s ease-in;
+  padding: 10px;
+  scale: 1.02;
+  margin-bottom: -5px;
+  margin-top: -5px;
+}
+
+.project-detail .title img:hover {
+  border-radius: 50%;
+  padding: 2px;
+  border: 5px solid #f8f8f8;
+  scale: 1.2;
+  z-index: -1;
 }
