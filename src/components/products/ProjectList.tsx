@@ -23,7 +23,6 @@ const ProjectList = () => {
         start: "top 95%",
         end: "top 100%",
         scrub: 0.5,
-        markers: true, // for debugging
       },
     });
     const cards = listRef?.current?.querySelectorAll(".each-project-card");

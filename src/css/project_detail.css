@@ -29,6 +29,8 @@
 .project-detail h3 {
   font-size: 2em;
   font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .project-detail p {

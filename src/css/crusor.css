@@ -67,8 +67,10 @@ body p:hover {
 
 .project-detail h3:hover {
   border-radius: 10px;
-  padding: 10px;
-  margin: -10px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  width: fit-content;
 }
 
 .project-detail p:hover {

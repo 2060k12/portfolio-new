@@ -32,6 +32,11 @@ const ProductDetails = () => {
       duration: 1,
       opacity: 0,
     });
+    gsap.from(".project-details .sub-title", {
+      y: -200,
+      duration: 1,
+      opacity: 0,
+    });
     gsap.from(left.current, {
       x: -200,
       duration: 1,
@@ -62,11 +67,7 @@ const ProductDetails = () => {
       </div>
 
       <div className="sub-title">
-        <h3>Kotlin, Instagam clone</h3>
-        <div>
-          <img src="/Kotlin.svg" alt="" height="50" />
-          <img src="/Android.svg" alt="" height="50" />
-        </div>
+        <h3>{project.subTitle}</h3>
       </div>
       <div className="vdo"></div>
       <div className="overview">
@@ -84,7 +85,7 @@ const ProductDetails = () => {
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
               ></iframe>
-              <h3 style={{ marginTop: 10, marginBottom: 20 }}>Screenshots</h3>
+              <h3>Screenshots</h3>
 
               <div className="screenshots-imgs">
                 {project.screenshot.map((item) => (
