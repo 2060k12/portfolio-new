@@ -67,14 +67,14 @@ const LoadingScreen = () => {
             <h5>{loadNum}</h5>
             <h6>- 100</h6>
           </div>
-          <h1>Your</h1>
+          <h1>Something</h1>
         </div>
 
         <div className="line">
-          <h1>Web Experiences</h1>
+          <h1>Awesome is brewing</h1>
         </div>
         <div className="line">
-          <h1>is loading right</h1>
+          <h1>Behind the scenes</h1>
           <h2>Now</h2>
         </div>
       </div>
