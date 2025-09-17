@@ -1,5 +1,4 @@
 import "../css/hero.css";
-// import LoadingScreen from "./LoadingScreen";
 
 const HeroPage = () => {
   return (

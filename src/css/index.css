@@ -92,8 +92,15 @@ body {
 footer {
   text-align: center;
   padding: 1rem 0;
-  background-color: #101010;
+  background-color: #090909;
   color: #fff;
   font-size: 0.9rem;
   font-weight: 400;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .crsr {
+    display: hidden;
+  }
 }
