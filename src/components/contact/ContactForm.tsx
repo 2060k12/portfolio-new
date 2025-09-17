@@ -29,11 +29,21 @@ const ContactForm = () => {
               detail="hello@itspranish.dev"
               title="Email"
               onClick={handleClick}
-              icon={<RiMailFill color="white" size={40} />}
+              icon={
+                <RiMailFill
+                  color="white"
+                  size={window.innerWidth < 768 ? 24 : 40}
+                />
+              }
             />
 
             <ContactCard
-              icon={<RiMapPin2Fill style={{ color: "white" }} size={40} />}
+              icon={
+                <RiMapPin2Fill
+                  style={{ color: "white" }}
+                  size={window.innerWidth < 768 ? 24 : 40}
+                />
+              }
               title="Located"
               detail="Sydney, Australia"
               onClick={() =>
@@ -42,7 +52,12 @@ const ContactForm = () => {
             />
 
             <ContactCard
-              icon={<RiLinkedinBoxFill color="white" size={40} />}
+              icon={
+                <RiLinkedinBoxFill
+                  color="white"
+                  size={window.innerWidth < 768 ? 24 : 40}
+                />
+              }
               title="Linkedin"
               detail="Pranish Pathak"
               onClick={() =>

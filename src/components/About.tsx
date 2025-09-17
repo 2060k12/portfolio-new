@@ -7,49 +7,56 @@ import { useRef } from "react";
 
 const About = () => {
   gsap.registerPlugin(ScrollTrigger);
-
+  const isMobile = window.innerWidth < 768;
   const titleRef = useRef<HTMLHeadingElement>(null);
   const bodyRef = useRef<HTMLParagraphElement>(null);
   const itemsRef = useRef<HTMLDivElement>(null);
   useGSAP(() => {
     const tl = gsap.timeline();
 
+    const startTitle = isMobile ? "top 95%" : "top 90%";
+    const endTitle = isMobile ? "top 97%" : "top 95%";
+    const startItems = isMobile ? "top 60%" : "top 90%";
+    const endItems = isMobile ? "top 75%" : "top 95%";
+
     tl.from(titleRef.current, {
-      duration: 1,
+      duration: 0.5,
       y: -10,
       opacity: 0,
-      stagger: 0.2,
+
       scrollTrigger: {
         trigger: titleRef.current,
+        start: startTitle,
         scroller: window,
-        start: "top 90%",
-        scrub: 2,
+        end: endTitle,
+        scrub: 0.5,
       },
     });
 
     tl.from(bodyRef.current, {
-      duration: 2,
-      y: 100,
+      duration: 0.5,
+      y: 50,
       opacity: 0,
-      stagger: 0.2,
       scrollTrigger: {
         trigger: titleRef.current,
+        start: startTitle,
+        end: endTitle,
         scroller: window,
-        start: "top 90%",
-        scrub: 2,
+        scrub: 0.5,
       },
     });
 
     tl.from(itemsRef.current, {
-      duration: 2,
-      y: 100,
+      duration: 0.5,
+      y: 50,
       opacity: 0,
       stagger: 0.2,
       scrollTrigger: {
-        trigger: titleRef.current,
+        trigger: bodyRef.current,
         scroller: window,
-        start: "top 70%",
-        scrub: 2,
+        end: endItems,
+        start: startItems,
+        scrub: 0.5,
       },
     });
   });

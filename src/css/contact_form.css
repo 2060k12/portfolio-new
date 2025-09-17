@@ -105,7 +105,7 @@
 }
 
 .form .left p {
-  font-size: 2vw;
+  font-size: 1.5em;
 }
 
 .form .left p:hover {
@@ -131,20 +131,36 @@
 }
 
 @media screen and (max-width: 600px) {
+  .contact-form {
+    height: fit-content;
+  }
+
+  .form .left p {
+    font-size: 1em;
+  }
   .contact-form .form {
+    /* background-color: red; */
     display: grid;
     grid-template-columns: repeat(1, auto);
-    margin-left: 4vw;
-    margin-right: 4vw;
+    width: 100vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     margin-top: 1vw;
   }
   .contact-card {
     width: 100%;
-    border-radius: 10px;
   }
+
+  .contact-card .detail h3 {
+    font-size: 0.7em;
+  }
+  .contact-card .detail h4 {
+    font-size: 1em;
+  }
+
   .contact-form .form .right input,
   .contact-form .form .right textarea {
-    padding: 2vw;
+    padding: 2vw 4vw;
     margin-top: 1vw;
     border-radius: 10px;
     font-size: 1.1em;
@@ -152,7 +168,14 @@
     color: white;
   }
 
+  .contact-form .form .right {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
   .contact-form .form .right button {
     padding: 2.5vw;
+    margin-top: 1vw;
   }
 }

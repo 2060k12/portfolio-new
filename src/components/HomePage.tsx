@@ -6,9 +6,12 @@ import Footer from "./Footer";
 import About from "./About";
 import "../css/crusor.css";
 import { useEffect, useRef } from "react";
+import "../css/hero.css";
+import LoadingScreen from "./LoadingScreen";
 
 const HomePage = () => {
   const cursorRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       if (cursorRef.current) {
@@ -22,13 +25,17 @@ const HomePage = () => {
 
   return (
     <div id="main">
-      <div className="crsr" ref={cursorRef}></div>
-      <HeroPage />
-      <TechIconPage />
-      <About />
-      <ProjectList />
-      <ContactForm />
-      <Footer />
+      <LoadingScreen />
+      <div id="content">
+        <div className="crsr" ref={cursorRef}></div>
+        <HeroPage />
+        <TechIconPage />
+        <About />
+        <ProjectList />
+        <ContactForm />
+
+        <Footer />
+      </div>
     </div>
   );
 };

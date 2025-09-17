@@ -11,8 +11,12 @@
   width: 100%;
   position: fixed;
   z-index: 999;
-  background-color: #0b0b0b;
+  background-color: transparent;
+  /* background-color: #0b0b0b; */
   padding: 25vh 10vw;
+  top: 0;
+  left: 0;
+  z-index: 9999;
 }
 
 .line {
@@ -51,7 +55,6 @@
 .page1 {
   height: 100vh;
   width: 100%;
-  /* background-color: #151515; */
 }
 
 .line h2 {

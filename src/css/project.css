@@ -97,6 +97,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .page4 .projects {
+    /* height: 90vh; */
+  }
+
   .page4 .update-container .elem1 h3 {
     font-size: 3vw;
     width: 50%;
