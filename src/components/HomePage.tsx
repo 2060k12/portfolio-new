@@ -25,7 +25,7 @@ const HomePage = () => {
 
   return (
     <div id="main">
-      <LoadingScreen />
+      {/* <LoadingScreen /> */}
       <div id="content">
         <div className="crsr" ref={cursorRef}></div>
         <HeroPage />

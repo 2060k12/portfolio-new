@@ -2,11 +2,16 @@ import ContactCard from "./ContactCard";
 import "./../..//css/contact_form.css";
 import { useForm, ValidationError } from "@formspree/react";
 import { RiLinkedinBoxFill, RiMailFill, RiMapPin2Fill } from "@remixicon/react";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 const ContactForm = () => {
   const handleClick = () => {
     window.location.href = `mailto:hello@itspranish.dev?subject=Hello&body=I wanted to reach out!`;
   };
+  const isMobile = window.innerWidth < 768;
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -15,8 +20,25 @@ const ContactForm = () => {
 
   const [state, handleSubmit] = useForm("mdklrobe");
 
+  const formRef = useRef<HTMLDivElement>(null);
+
+  gsap.registerPlugin(ScrollTrigger);
+  useGSAP(() => {
+    gsap.from(formRef.current, {
+      opacity: 0,
+      y: isMobile ? 100 : -100,
+      duration: 1,
+      scrollTrigger: {
+        trigger: formRef.current,
+        start: isMobile ? "top 90%" : "top 70%",
+
+        scrub: 0.5,
+      },
+    });
+  });
+
   return (
-    <div className="contact-form">
+    <div className="contact-form" ref={formRef}>
       <div className="form">
         <div className="left">
           <h1>Get in touch</h1>

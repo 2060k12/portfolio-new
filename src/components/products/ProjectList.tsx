@@ -21,7 +21,7 @@ const ProjectList = () => {
       scrollTrigger: {
         trigger: titleRef.current,
         start: "top 95%",
-        end: "top 100%",
+        end: "top 97%",
         scrub: 0.5,
       },
     });

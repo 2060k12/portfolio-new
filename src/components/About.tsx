@@ -14,33 +14,32 @@ const About = () => {
   useGSAP(() => {
     const tl = gsap.timeline();
 
-    const startTitle = isMobile ? "top 95%" : "top 90%";
-    const endTitle = isMobile ? "top 97%" : "top 95%";
-    const startItems = isMobile ? "top 60%" : "top 90%";
-    const endItems = isMobile ? "top 75%" : "top 95%";
+    const startTitle = "top 90%";
+    const endTitle = "top 95%";
+    const startItems = isMobile ? "top 95%" : "top 99%";
 
     tl.from(titleRef.current, {
-      duration: 0.5,
-      y: -10,
+      duration: 1,
+      y: 40,
       opacity: 0,
-
+      stagger: 0.5,
       scrollTrigger: {
         trigger: titleRef.current,
-        start: startTitle,
+        start: isMobile ? "top 95%" : startTitle,
         scroller: window,
-        end: endTitle,
-        scrub: 0.5,
+        end: isMobile ? "" : endTitle,
+        scrub: 0.2,
       },
     });
 
     tl.from(bodyRef.current, {
-      duration: 0.5,
-      y: 50,
+      duration: 1,
+      y: 40,
       opacity: 0,
       scrollTrigger: {
         trigger: titleRef.current,
-        start: startTitle,
-        end: endTitle,
+        start: isMobile ? "top 90%" : startTitle,
+        end: isMobile ? "" : endTitle,
         scroller: window,
         scrub: 0.5,
       },
@@ -54,7 +53,7 @@ const About = () => {
       scrollTrigger: {
         trigger: bodyRef.current,
         scroller: window,
-        end: endItems,
+        // end: endItems,
         start: startItems,
         scrub: 0.5,
       },

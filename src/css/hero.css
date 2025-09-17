@@ -11,8 +11,8 @@
   width: 100%;
   position: fixed;
   z-index: 999;
-  background-color: transparent;
-  /* background-color: #0b0b0b; */
+  /* background-color: transparent; */
+  background-color: #0b0b0b;
   padding: 25vh 10vw;
   top: 0;
   left: 0;
