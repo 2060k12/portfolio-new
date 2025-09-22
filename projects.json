@@ -1,5 +1,4 @@
 [
-
   {
     "id": "project-7",
     "title": "Workplace Management FullStack",
@@ -171,8 +170,5 @@
     "video": "https://www.youtube.com/embed/3TjtR8DqjNI?si=QPHuYnDZhqNI-7YR",
     "screenshot": ["/images/41.png", "/images/42.png", "/images/43.png"],
     "thumnail": ["/images/41.png", "/images/42.png", "/images/43.png"]
-  },
- 
-  
-  
+  }
 ]
