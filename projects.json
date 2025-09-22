@@ -4,7 +4,8 @@
     "title": "Workplace Management FullStack",
     "tech": "React Native, NodeJS, ExpressJS, AWS, Real-time Chat",
     "subTitle": "React Native, Express",
-    "github": "https://github.com/2060k12/workplace-management-app  https://github.com/euronymousutsv/WorkplaceBackend",
+    "github": "https://github.com/euronymousutsv/WorkplaceFrontEnd",
+    "github2": "https://github.com/euronymousutsv/WorkplaceBackend",
     "overview": "A full-stack workplace management application developed using React Native for mobile platforms and ExpressJS with NodeJS for the backend. It includes features like real-time communication, role-based access, and geofencing.",
     "features": [
       "User authentication with role-based access",
@@ -23,7 +24,7 @@
     "screenshot": ["/images/71.png", "/images/72.png", "/images/73.png"],
     "thumnail": ["/images/71.png", "/images/72.png", "/images/73.png"]
   },
-{
+  {
     "id": "project-8",
     "title": "Bakery Website",
     "tech": "Next.js, TypeScript, PostgreSQL, Amazon S3, DigitalOcean, CMS Integration",
@@ -88,7 +89,7 @@
     "screenshot": ["/images/21.png", "/images/22.png", "/images/23.png"],
     "thumnail": ["/images/21.png", "/images/22.png", "/images/23.png"]
   },
-{
+  {
     "id": "project-6",
     "title": "Bill Splitting App",
     "tech": "React Native, Firebase (Auth & Firestore), Real-time Notifications",
@@ -109,7 +110,7 @@
     "screenshot": ["/images/61.png", "/images/62.png", "/images/63.png"],
     "thumnail": ["/images/61.png", "/images/62.png", "/images/63.png"]
   },
- {
+  {
     "id": "project-5",
     "title": "Voice Recorder",
     "tech": "Swift, UIKit, Firebase (Auth & Storage), AVFoundation, Unsplash API",

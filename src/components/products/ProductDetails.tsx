@@ -12,7 +12,9 @@ const ProductDetails = () => {
   const ss = useRef(null);
 
   const { id } = useParams();
+
   const cursorRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       if (cursorRef.current) {
@@ -56,7 +58,8 @@ const ProductDetails = () => {
 
   return project?.id ? (
     <div className="project-detail">
-      {/* <div className="crsr"></div> */}
+      <div className="crsr" ref={cursorRef}></div>
+
       <div ref={titleRef} className="title">
         <h1>{project?.title}</h1>
         <a
@@ -64,6 +67,18 @@ const ProductDetails = () => {
         >
           <img src="/icons/github-mark-white.svg" alt="" height="50" />
         </a>
+
+        {project.github2 ? (
+          <a
+            href={
+              project.github ? project.github : "https://github.com/2060k12"
+            }
+          >
+            <img src="/icons/github-mark-white.svg" alt="" height="50" />
+          </a>
+        ) : (
+          ""
+        )}
       </div>
 
       <div className="sub-title">
