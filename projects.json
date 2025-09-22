@@ -1,4 +1,50 @@
 [
+
+  {
+    "id": "project-7",
+    "title": "Workplace Management FullStack",
+    "tech": "React Native, NodeJS, ExpressJS, AWS, Real-time Chat",
+    "subTitle": "React Native, Express",
+    "github": "https://github.com/2060k12/workplace-management-app  https://github.com/euronymousutsv/WorkplaceBackend",
+    "overview": "A full-stack workplace management application developed using React Native for mobile platforms and ExpressJS with NodeJS for the backend. It includes features like real-time communication, role-based access, and geofencing.",
+    "features": [
+      "User authentication with role-based access",
+      "Multi-server structure for different offices",
+      "Channel-based communication",
+      "Clock in/out functionality",
+      "Leave requests management",
+      "Document upload and validation",
+      "Real-time chat",
+      "Roster and schedule view",
+      "Income overview",
+      "Push and in-app notifications",
+      "Custom chat themes"
+    ],
+    "video": "https://www.youtube.com/embed/0Vbt-8BXhoU",
+    "screenshot": ["/images/71.png", "/images/72.png", "/images/73.png"],
+    "thumnail": ["/images/71.png", "/images/72.png", "/images/73.png"]
+  },
+{
+    "id": "project-8",
+    "title": "Bakery Website",
+    "tech": "Next.js, TypeScript, PostgreSQL, Amazon S3, DigitalOcean, CMS Integration",
+    "subTitle": "Next.js, TypeScript, PostgreSQL",
+    "github": "https://github.com/2060k12/BakeryWebapp",
+    "overview": "A bakery website developed using Next.js and TypeScript. It features a CMS for managing promotions and orders, integration with TikTok for video content, and a custom cake ordering system.",
+    "features": [
+      "CMS features for managing promotions",
+      "Create and manage orders",
+      "Upload content",
+      "Explore page for browsing",
+      "View TikTok videos by the bakery",
+      "Checkout functionality",
+      "Custom cake orders",
+      "Add to cart"
+    ],
+    "video": "https://www.youtube.com/embed/L0fKLDUR4IM?si=1P7CqbPaXY3xBPAz",
+    "screenshot": ["/images/81.png"],
+    "thumnail": ["/images/81.png"]
+  },
   {
     "id": "project-1",
     "title": "Social Media App",
@@ -43,6 +89,48 @@
     "screenshot": ["/images/21.png", "/images/22.png", "/images/23.png"],
     "thumnail": ["/images/21.png", "/images/22.png", "/images/23.png"]
   },
+{
+    "id": "project-6",
+    "title": "Bill Splitting App",
+    "tech": "React Native, Firebase (Auth & Firestore), Real-time Notifications",
+    "subTitle": "React Native, Firebase",
+    "github": "https://github.com/2060k12/BillShareCrossPlatformApp",
+    "overview": "A cross-platform bill splitting application developed using React Native and Firebase. It allows users to share bills with contacts and manage expenses efficiently.",
+    "features": [
+      "Secure login with Firebase Authentication",
+      "Add and remove users from expenses",
+      "Settle bills",
+      "In-app notifications",
+      "Profile management",
+      "View expense details",
+      "Remove users from any expenses",
+      "Update expenses"
+    ],
+    "video": "https://www.youtube.com/embed/VRgtWyjoqdI?si=qHO989Imei3IYOpF",
+    "screenshot": ["/images/61.png", "/images/62.png", "/images/63.png"],
+    "thumnail": ["/images/61.png", "/images/62.png", "/images/63.png"]
+  },
+ {
+    "id": "project-5",
+    "title": "Voice Recorder",
+    "tech": "Swift, UIKit, Firebase (Auth & Storage), AVFoundation, Unsplash API",
+    "subTitle": "Swift, UIKit, Firebase",
+    "github": "https://github.com/2060k12/MagicRecorder",
+    "overview": "An iOS voice recording application developed using Swift and UIKit. It integrates Firebase for backend services and utilizes AVFoundation for audio recording and playback.",
+    "features": [
+      "Record audio",
+      "Play recorded audio",
+      "Convert audio to video with an image",
+      "Unsplash API integration for images",
+      "Choose images from the gallery",
+      "Upload recordings to Firebase Storage",
+      "Search users by email and play their recordings"
+    ],
+    "video": "https://www.youtube.com/embed/Re9SOGq4iG0?si=1O8D1YShbHvya34i",
+    "screenshot": ["/images/51.png", "/images/52.png", "/images/53.png"],
+
+    "thumnail": ["/images/51.png", "/images/52.png", "/images/53.png"]
+  },
   {
     "id": "project-3",
     "title": "Music Review Website",
@@ -82,95 +170,9 @@
     ],
     "video": "https://www.youtube.com/embed/3TjtR8DqjNI?si=QPHuYnDZhqNI-7YR",
     "screenshot": ["/images/41.png", "/images/42.png", "/images/43.png"],
-
     "thumnail": ["/images/41.png", "/images/42.png", "/images/43.png"]
   },
-  {
-    "id": "project-5",
-    "title": "Voice Recorder",
-    "tech": "Swift, UIKit, Firebase (Auth & Storage), AVFoundation, Unsplash API",
-    "subTitle": "Swift, UIKit, Firebase",
-    "github": "https://github.com/2060k12/MagicRecorder",
-    "overview": "An iOS voice recording application developed using Swift and UIKit. It integrates Firebase for backend services and utilizes AVFoundation for audio recording and playback.",
-    "features": [
-      "Record audio",
-      "Play recorded audio",
-      "Convert audio to video with an image",
-      "Unsplash API integration for images",
-      "Choose images from the gallery",
-      "Upload recordings to Firebase Storage",
-      "Search users by email and play their recordings"
-    ],
-    "video": "https://www.youtube.com/embed/Re9SOGq4iG0?si=1O8D1YShbHvya34i",
-    "screenshot": ["/images/51.png", "/images/52.png", "/images/53.png"],
-
-    "thumnail": ["/images/51.png", "/images/52.png", "/images/53.png"]
-  },
-  {
-    "id": "project-6",
-    "title": "Bill Splitting App",
-    "tech": "React Native, Firebase (Auth & Firestore), Real-time Notifications",
-    "subTitle": "React Native, Firebase",
-    "github": "https://github.com/2060k12/BillShareCrossPlatformApp",
-    "overview": "A cross-platform bill splitting application developed using React Native and Firebase. It allows users to share bills with contacts and manage expenses efficiently.",
-    "features": [
-      "Secure login with Firebase Authentication",
-      "Add and remove users from expenses",
-      "Settle bills",
-      "In-app notifications",
-      "Profile management",
-      "View expense details",
-      "Remove users from any expenses",
-      "Update expenses"
-    ],
-    "video": "https://www.youtube.com/embed/VRgtWyjoqdI?si=qHO989Imei3IYOpF",
-    "screenshot": ["/images/61.png", "/images/62.png", "/images/63.png"],
-
-    "thumnail": ["/images/61.png", "/images/62.png", "/images/63.png"]
-  },
-  {
-    "id": "project-7",
-    "title": "Workplace Management FullStack",
-    "tech": "React Native, NodeJS, ExpressJS, AWS, Real-time Chat",
-    "subTitle": "React Native, Express",
-    "github": "https://github.com/2060k12/workplace-management-app  https://github.com/euronymousutsv/WorkplaceBackend",
-    "overview": "A full-stack workplace management application developed using React Native for mobile platforms and ExpressJS with NodeJS for the backend. It includes features like real-time communication, role-based access, and geofencing.",
-    "features": [
-      "User authentication with role-based access",
-      "Multi-server structure for different offices",
-      "Channel-based communication",
-      "Clock in/out functionality",
-      "Leave requests management",
-      "Document upload and validation",
-      "Real-time chat",
-      "Roster and schedule view",
-      "Income overview",
-      "Push and in-app notifications",
-      "Custom chat themes"
-    ],
-    "video": "https://www.youtube.com/embed/your_video_id",
-    "screenshot": ["/images/71.png", "/images/72.png", "/images/73.png"],
-    "thumnail": ["/images/71.png", "/images/72.png", "/images/73.png"]
-  },
-  {
-    "id": "project-8",
-    "title": "Bakery Website",
-    "tech": "Next.js, TypeScript, PostgreSQL, Amazon S3, DigitalOcean, CMS Integration",
-    "subTitle": "Next.js, TypeScript, PostgreSQL",
-    "github": "https://github.com/2060k12/BakeryWebapp",
-    "overview": "A bakery website developed using Next.js and TypeScript. It features a CMS for managing promotions and orders, integration with TikTok for video content, and a custom cake ordering system.",
-    "features": [
-      "CMS features for managing promotions",
-      "Create and manage orders",
-      "Upload content",
-      "Explore page for browsing",
-      "View TikTok videos by the bakery",
-      "Checkout functionality",
-      "Custom cake orders",
-      "Add to cart"
-    ],
-    "video": "https://www.youtube.com/embed/L0fKLDUR4IM?si=1P7CqbPaXY3xBPAz",
-    "screenshot": ["/images/81.png"],
-    "thumnail": ["/images/81.png"]
-  }
+ 
+  
+  
 ]
